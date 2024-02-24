@@ -1,0 +1,88 @@
+
+h1{
+    text-align:start;
+    font-size:large;
+    color:darkblue;
+font-family:'Hachi Maru Pop';
+background-color:#3aa2e7;
+
+font-size: 30px;
+}
+
+
+h2{
+font-size: 50px;
+color:darkblue;
+text-decoration: none;
+text-align: center;
+text-shadow: 3px 2px black;
+text-decoration: underline;
+font-family: 'Tangerine';
+
+}
+h3{
+font-size: 26px;
+color: darkblue;
+text-align: center;
+padding-top: 50px;
+font-family: 'Tangerine';
+
+}
+
+/*aside{
+width: 200px;
+height:unset ;
+BRCLEAR:"left"; 
+}*/
+article{
+height: 700px;
+width: 900px;
+
+
+}
+.content_img{
+width: 400px;
+height: 400px;
+margin-right: 10px;
+float: left;
+position: relative;
+}
+.content_img div{
+position: absolute;
+bottom: 0;
+right: 0;
+margin-bottom: 5px;
+visibility: hidden;
+color: white;
+background:black;
+opacity: 0;
+width :200px;
+height : 70px;
+
+text-align: center;
+}
+.content_img:hover{
+cursor: pointer;
+
+}
+.content_img:hover div{
+
+width: 100px;
+padding: 8px 15px;
+visibility: visible;
+opacity: 0.7; 
+
+}
+.text{
+text-align: center;
+height: fit-content;
+width:fit-content;
+padding-top: 120px ;
+text-decoration: black;
+font-size: 15px;
+}
+.auther{
+text-align:left;
+text-decoration: black;
+font-size: 12px;
+}

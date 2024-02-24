@@ -1,0 +1,11 @@
+open from chrome browser.
+
+open signIn.html it's first page .
+
+
+to open the admin page :
+email:nano123@gmail.com
+pass:123456
+
+please change the path of function admin in script.js with the path of the admin page .html
+------------------------

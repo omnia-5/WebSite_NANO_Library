@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+			integrity="sha256-eZrrJcwDc/3uDhsdt61sL2oOBY362qM3lon1gyExkL0="
+			crossorigin="anonymous"
+		/>
+		<link rel="stylesheet" href="style.css" />
+		<title>Slider Sign In / Sign Up Form</title>
+	</head>
+	<body>
+		<div class="container" id="container">
+			<div class="form-container sign-up-container">
+				<form role="form" onsubmit="signUp(event)" action="page7.html" method="POST">
+					<h1>Create Account</h1>
+					<div class="social-container">
+						<a href="https://www.facebook.com" target="_blank" class="social"><i class="fa fa-facebook"></i></a>
+						<a href="https://www.google.com" target="_blank" class="social"><i class="fa fa-google-plus"></i></a>
+						<a href="https://www.linkedin.com" target="_blank" class="social"><i class="fa fa-linkedin"></i></a>
+					</div>
+					<span>or use your email for registration</span>
+
+					<input type="text" name="username" placeholder="First Name" required />
+					<input type="text" name="username" placeholder="Last Name" required />
+					<input type="email" name="email" placeholder="Email" required />
+					<input type="password" name="passward" minlength="6" maxlength="15" placeholder="Password" required />
+					<input type="date" name="date" placeholder="Enter your birthday" required />
+					<div class="rado">
+						<input type="radio" id="male" name="gender" value="male" />
+						<label for="male">Male</label>
+						<input type="radio" id="female" name="gender" value="female" />
+						<label for="female">Female</label>
+					</div>
+					<div class="sel">
+						<label for="country">Please choose your country :</label>
+						<select name="country" id="country">
+							<option>Italy</option>
+							<option>England</option>
+							<option>French</option>
+							<option>Egypt</option>
+							<option>Spain</option>
+							<option>The U.S</option>
+							<option>Japan</option>
+							<option>Australia</option>
+							<option>Jordan</option>
+							<option>Oman</option>
+							<option>Emirates</option>
+							<option>Lebanon</option>
+							<option>Mauritania</option>
+							<option>Kuwait</option>
+							<option>Qatar</option>
+							<option>libya</option>
+						</select>
+					</div>
+					<button>Register</button>
+				</form>
+			</div>
+			<div class="form-container sign-in-container">
+				<form class="login_form">
+					<h1>Sign in</h1>
+					<div class="social-container">
+						<a href="https://www.facebook.com" target="_blank" class="social"><i class="fa fa-facebook"></i></a>
+						<a href="https://www.google.com" target="_blank" class="social"><i class="fa fa-google-plus"></i></a>
+						<a href="https://www.linkedin.com" target="_blank" class="social"><i class="fa fa-linkedin"></i></a>
+					</div>
+					<span>or use your account</span>
+					<input name="email" type="email" id="re_quired1" required placeholder="Email" />
+					<input name="password" type="password" minlength="6" maxlength="15" id="re_quired2"  required placeholder="Password" />
+					<a href="#">Forgot your password?</a>
+					<button id="submit">Sign In</button>
+				</form>
+			</div>
+			<div class="overlay-container">
+				<div class="overlay">
+					<div class="overlay-panel overlay-left">
+						<h1>Welcome Back!</h1>
+						<p>To keep connected with us please login with your personal info</p>
+						<button class="ghost" id="signIn">Sign In</button>
+					</div>
+					<div class="overlay-panel overlay-right">
+						<h1>Hello, Friend!</h1>
+						<p>Enter your personal details and start journey with us</p>
+						<button class="ghost" id="signUp">Sign Up</button>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<script type="text/javascript" src="script.js"></script>
+	</body>
+</html>

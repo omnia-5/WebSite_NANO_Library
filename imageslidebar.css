@@ -1,0 +1,124 @@
+*
+{
+    
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+}
+body
+{
+    font-family:  Tahoma, Arial, Helvetica;
+    
+    
+    
+}
+.slider-container
+{
+    background-color: rgb(54, 99, 153);
+    margin:10px auto;
+    padding-top: 19px;
+    padding-left: 230px;
+    width:800px;
+    height: 550px;
+    position: relative;
+    
+}
+.slider-container img
+{
+position: absolute;
+opacity: 0;
+transition: opacity 1s;
+z-index: 1;
+}
+.slider-container img.active
+{
+    opacity: 1;
+}
+.slider-container .slide-number
+{
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    background-color: #739aca;;
+    color: white;
+    padding: 5px 10px;
+    font-size: 20px;
+    z-index:2;
+    border-radius: 6px;
+    
+
+}
+
+.slider-controls
+{
+    width: 800px;
+    margin: auto;
+    overflow: hidden;
+}
+.slider-controls .prev , .slider-controls .next
+{ 
+    background-color: rgb(54, 99, 153);
+    font-size: 20px;
+    width: 80px;
+    color: white;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 4px;
+    padding: 5px;
+    user-select: none;
+    width: 20%;
+
+}
+
+
+
+.slider-controls  .prev
+{
+    float:left;
+}
+.slider-controls  .next
+{
+float: right;
+}
+.slider-controls  .disabled,
+.slider-controls  .disabled,
+.slider-controls .disabled
+ 
+{
+    background-color: #739aca;;
+    cursor:no-drop ;
+    
+}
+.slider-controls .idicator
+{
+    width: 60%;
+    background-color:  #3aa2e7 ;
+    float: left;
+
+}
+.slider-controls .idicator ul
+{
+    list-style: none;
+    margin: 0;
+    text-align: center;
+
+}
+.slider-controls .idicator ul li
+{
+    display: inline-block;
+    background-color: rgb(54, 99, 153);
+  color: white;
+    font-size:20px;
+    height: 28px;
+    width: 28px;
+    border-radius:4px;
+    margin: 0px 2px ;
+    line-height: 28px;
+    cursor: pointer;
+
+}
+.slider-controls .idicator ul li.active
+{
+    background-color: #739aca;
+    color: black;
+}

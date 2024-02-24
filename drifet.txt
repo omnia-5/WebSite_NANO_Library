@@ -1,0 +1,33 @@
+
+//for horror page
+<span id="result"></span>
+  <script>document.getElementById("result").innerHTML = localStorage.getItem("textvalue");
+    document.body.style.background = localStorage.getItem("value");</script>
+
+//for romance page
+<span id="result2"></span>
+  <script>document.getElementById("result2").innerHTML = localStorage.getItem("textvalue2");
+    document.body.style.background = localStorage.getItem("value2");</script>
+
+//for history page
+<span id="result3"></span>
+  <script>document.getElementById("result3").innerHTML = localStorage.getItem("textvalue3");
+    document.body.style.background = localStorage.getItem("value3");</script>
+
+//for science page 
+<span id="result4"></span>
+  <script>document.getElementById("result4").innerHTML = localStorage.getItem("textvalue4");
+    document.body.style.background = localStorage.getItem("value4");</script>
+
+//for home page
+<span id="result5"></span>
+  <script>document.getElementById("result5").innerHTML = localStorage.getItem("textvalue5");
+    document.body.style.background = localStorage.getItem("value5");</script>
+
+//for about page
+<span id="result6"></span>
+  <script>document.getElementById("result6").innerHTML = localStorage.getItem("textvalue6");
+    document.body.style.background = localStorage.getItem("value6");</script>
+
+
+

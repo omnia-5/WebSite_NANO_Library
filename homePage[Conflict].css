@@ -1,0 +1,53 @@
+.picture img{
+width: 350px;
+height :350px;
+float: right;
+display: inline;
+margin: 10 auto;
+}
+.content{
+font-size: 40px;
+font-family: cursive;
+text-align:justify;
+margin-top: -15px;
+background-color:#3aa2e7 ;
+}
+h2{
+color: rgb(62, 62, 145);
+text-align: left;
+font-size: 60px;
+}
+hr{
+border: solid rgb(62, 62, 145) ;
+background-color:rgb(62, 62, 145) ;
+height: 5px;
+}
+.c h2{
+text-align: center;
+font-size: 60px;
+}
+.p{
+    font-size: 40px;
+    font-family: cursive;
+    text-align:justify;
+    margin-top: -15px;
+    text-align: center;
+}
+.pic img{
+    width: 325px;
+    height: 375px;
+    margin: 6px;
+}
+.pic{
+    background-color: #3aa2e7;
+    background-repeat: repeat-y;
+    background-position: center;
+    background-size: cover;
+}
+.bdi{
+    font-size: 100px;
+}
+.picture_content{
+    background-color: #3aa2e7;
+
+}

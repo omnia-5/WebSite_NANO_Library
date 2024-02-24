@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+   
+    <title>Home Page</title>
+    <link rel="stylesheet" href="slide animation.css">  
+    <link rel="stylesheet" href="homePage.css">
+    
+   <style>
+       *
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: sans-serif;
+}
+.logo{
+color: #141d28 ;
+margin-bottom: -74px;
+}
+.logo span{
+color: rgb(62, 62, 145);
+font-size: 65px;
+padding-right: 5px;
+
+margin-top: -10px;
+}
+nav{
+padding-left: 700px;
+
+}
+.out{
+display: flex;
+list-style-type: none;
+
+}
+.home{
+padding-right: 40px;
+padding-top: 30px;
+}
+
+.books{
+padding-right: 20px;
+padding-top: 30px;
+}
+.social{
+padding-left: 45px;
+padding-top: 30px;
+}
+.about{
+padding-left: 10px;
+padding-top: 30px;
+
+}
+.appear{
+list-style-type: none;
+position: absolute;
+background-color:  #3aa2e7 ;;
+top: 70px;
+border-width: 0px;
+width: 150px;
+z-index: 200;
+display: none;
+padding: 0px;
+box-shadow: 1 5px 5px brown;
+margin-bottom: 0px;
+
+}
+.appear li{
+padding: 10px;
+}
+
+.contact{
+padding-left: 45px;
+margin-top: 30px;
+}
+
+a:hover{
+color: rgb(62, 62, 145) ;
+}
+.home:hover .appear{
+display: block;
+background-attachment: local;
+}
+.books:hover .appear{
+display: block;
+background-attachment: local;
+}
+.social:hover .appear{
+display: block;
+background-attachment: local;
+}
+
+.appear::before{
+content: "";
+border-left: 6px solid transparent;
+border-right: 6px solid transparent; border-top: 6px solid transparent;
+border-bottom: 6px solid #141d28 ;
+height: 0; width: 0; position: absolute;
+left: 40px;
+padding-top: 0px;
+margin-top: 0px;
+top: -11px;
+}
+.menu_bar{
+background-color:#3aa2e7;
+height: 90px;
+width: 1535px;
+display: inline-block;
+align-items: center;
+
+justify-content: space-evenly;
+padding: 0 5%;
+
+}
+.a_a{
+text-decoration: none;
+color: #141d28;
+}
+
+.contact:hover {
+cursor: pointer;
+}
+.books:hover {
+cursor: pointer;
+}
+.about:hover {
+cursor: pointer;
+}
+.social:hover {
+cursor: pointer;
+}
+
+.log_out{
+margin-left: 150px;
+margin-top: 50px;
+}
+
+.logout{
+text-decoration: none;
+background-color: #3aa2e7 ;
+color: #141d28;
+}
+.image_slidebar{
+   margin: 10px auto;
+   width: 1000px;
+   height: 350px;
+   position: relative;
+}
+.image_slidebar img {
+   position: absolute;
+   opacity: 0;
+   transition: opacity 1s;
+   z-index: 1;
+}
+.image_slidebar img im{
+   opacity: 1;
+}
+
+
+   </style>
+        <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+        integrity="sha256-eZrrJcwDc/3uDhsdt61sL2oOBY362qM3lon1gyExkL0="
+       crossorigin="anonymous"
+        />
+   <link rel="stylesheet" href="f/style.css">
+</head>
+<body id="change_home_page" >
+    <div class="menu_bar" >
+        <h1 class="logo" ><span id="logo">NANO</span>Book Store</h1>
+
+<nav id="change_navigation">
+<ul class="out">
+   
+    <li  class="home" >
+        <a href ="page7.html" class="a_a">Home</a>
+    </li>
+
+    <li class="books"><a>Books</a>
+        <ul class="appear">
+            <li><a href ="kinds of books/horro.HTML"  class="a_a">Horror books</a></li>
+            <li><a href ="kinds of books/romance.html"  class="a_a">Romantic books</a></li> 
+            <li><a href ="kinds of books/science.html"  class="a_a">Science books</a> </li>
+            <li><a href ="kinds of books/historical.html"  class="a_a">history books</a></li>
+        </ul>
+    
+    </li>
+    <li  class="about"><a href="page6.html" class="a_a" >About</a></li>
+    <li class="social"><a>Social</a>
+        <ul class="appear">
+            <li><a href ="https://www.facebook.com/"  class="a_a">Facebook </a></li>
+            <li><a href ="https://www.google.com/"  class="a_a">Google</a> </li>
+            <li><a href ="https://www.TWitter.com/"  class="a_a">Twitter</a> </li>
+        </ul>
+    
+    </li>
+   
+    <li class="contact"><a href="contact.html" class="a_a">Contact Us</a>
+    
+   
+    </li>
+  <li class="log_out">
+    <a type="button" href="signIn.html" class="logout" >Logout</a>
+  </li>  
+
+</ul>
+
+
+
+
+</nav>
+
+<br><br><br>
+<span id="result5"></span>
+  <script>document.getElementById("result5").innerHTML = localStorage.getItem("textvalue5");
+    document.body.style.background = localStorage.getItem("value5");</script>
+<br><br><br>
+<div class ="slider">
+    <ul>
+        <li><img src="img/47.jpg"></li>
+        <li><img src="img/48.jpg"></li>
+        <li><img src="img/49.jpg"></li>
+        <li><img src="img/50.jpg"></li>
+        <li><img src="img/52.jpg"></li>
+        <li><img src="img/2.jpg"></li>
+        <li><img src="img/4.jpg"></li>
+        <li><img src="img/53.jpg"></li>
+        <li><img src="img/54.jpg"></li>
+        <li><img src="img/55.jpg"></li>
+        <li><img src="img/56.jpg"></li>
+        <li><img src="img/57.jpg"></li>
+       
+    </ul>
+</div>
+<br><br><br><br>
+<div class="picture_content">
+<div class="picture">
+    <img src="original.jpg" alt="" >
+</div>
+<h2 style="margin-bottom: 30px;">NANO Book Store</h2>
+<pre class="content" style="margin-left: 20px;">
+All Of Us Have A Hobby In His Life 
+When I Think About This Thing I Found
+That I Love Books So Much so I With My Team
+Decided To Make This Book Store To Practice 
+Our Hobby And Help Our Friends to Practice 
+This Hobby Also<q>I Hope TO Enjoy With Us</q>.
+</pre>
+<br><br>
+<hr>
+<br><br>
+<div class="c">
+    <h2 style="margin-bottom: 30px;">NANO Book Store</h2>
+</div>
+<pre class="p">
+Every One Of Us Have His Private
+Importance With Specific Type Of
+Books. We decided to Introduce you
+A Horror ,Science,Romantic And at 
+the End Historic Books.
+I Hope To Love Our Book Store .
+</pre>
+<br><br>
+<div class="pic">
+<img src="top-view-old-hardcover-books-scary-horror-stories-book-o-112485351.jpg" alt="">
+<img src="science-speech-bubbles-above-science-books-pens-box-apple-mug-science-doodles-chalkboard-background-book-pen-57347466.jpg" alt="">
+<img src="The-8-Best-Young-Adult-Romance-Books.webp" alt="">
+<img src="81j9BWTqP5L.jpg" alt="">
+</div>
+</div>
+
+<br>
+<footer>
+           
+    <div class = footer-content >
+        <h3> made with NANO &copy;2021</h3>
+        <p> we chose this name through the first letter of our name </p>
+        <div class="social-container">
+            <a href="https://www.facebook.com" target="_blank" class="social"><i class="fa fa-facebook-square"></i></a>
+            <a href="https://www.twitter.com" target="_blank" class="social"><i class="fa fa-twitter-square"></i></a>
+            <a href="https://www.google.com"target="_blank" class="social"><i class="fa fa-google-plus-square"></i></a>
+            <a href="https://www.youtube.com" target="_blank" class="social"><i class="fa fa-youtube-square"></i></a>
+            <a href="https://www.linkedin.com"target="_blank" class="social"><i class="fa fa-linkedin-square"></i></a>
+        </div>
+       
+               
+    </div>
+</footer>
+
+</body>
+</html>

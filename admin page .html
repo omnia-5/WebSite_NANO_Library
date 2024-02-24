@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <tiltle>admin panel</tiltle>
+    <script>
+        //for horror page
+         function passvalues() {
+            var firstname = document.getElementById("txt").value;
+            localStorage.setItem("textvalue", firstname);
+            return ture;
+        }
+        function changecolor() {
+           var v= document.getElementById("colorname").value;
+            localStorage.setItem("value", v);
+            return ture;
+        }
+
+        //for romance page
+        function changecolor2() {
+           var v2= document.getElementById("colorname2").value;
+            localStorage.setItem("value2", v2);
+            return ture;
+        }
+        function passvalues2() {
+            var firstname2 = document.getElementById("txt2").value;
+            localStorage.setItem("textvalue2", firstname2);
+            return ture;
+        }
+
+        //for history page
+        function passvalues3() {
+            var firstname3 = document.getElementById("txt3").value;
+            localStorage.setItem("textvalue3", firstname3);
+            return ture;
+        }
+        function changecolor3() {
+           var v3= document.getElementById("colorname3").value;
+            localStorage.setItem("value3", v3);
+            return ture;
+        }
+
+        //for science page
+        function passvalues4() {
+            var firstname4 = document.getElementById("txt4").value;
+            localStorage.setItem("textvalue4", firstname4);
+            return ture;
+        }
+        function changecolor4() {
+           var v4= document.getElementById("colorname4").value;
+            localStorage.setItem("value4", v4);
+            return ture;
+        }
+
+        //for home page
+        function passvalues5() {
+            var firstname5 = document.getElementById("txt5").value;
+            localStorage.setItem("textvalue5", firstname5);
+            return ture;
+        }
+        function changecolor5() {
+           var v5= document.getElementById("colorname5").value;
+            localStorage.setItem("value5", v5);
+            return ture;
+        }
+        //for about page
+        function passvalues6() {
+            var firstname6 = document.getElementById("txt6").value;
+            localStorage.setItem("textvalue6", firstname6);
+            return ture;
+        }
+        function changecolor6() {
+           var v6= document.getElementById("colorname6").value;
+            localStorage.setItem("value6", v6);
+            return ture;
+        }
+
+    </script>
+    <style>
+        body{
+          margin: 0px;
+          border: 0px;
+        }
+        #header{
+            width:100%;
+            height: 130px;
+            background: black;
+            color:white;
+            width: 1600px;
+        }
+        #sidebar{
+            margin-right: 50px;
+            width: 300px;
+            height: 2180px;
+            background:rgb(85, 202, 248) ; 
+            color:gray ;
+            float: left;
+            
+        }
+        .data{
+           /* text-align: center;*/
+            height: 100%;
+            background: gray;
+            padding: 20px;
+            padding-left: 60px;
+            margin-left: 20px;
+            width: 1500px;
+        }
+        #adminlogo{
+            background:white ;
+            border-radius:50px ;
+        }
+        ul li{
+            padding: 40px;
+            border-bottom: 2px solid gray;
+            font-size: 30px;
+
+        }
+        ul li:hover{
+            background:black;
+            color: white;
+        }
+     
+    </style>
+</head>
+
+<body>
+    <div id="header">
+    <center><img src="admin2.jpg" alt="adminlogo" id="adminlogo"><br>this is admin panel, please procced with caution! 
+    </center>
+    </div>
+    <div id="sidebar">
+      <ul>
+        <a href="page7.html"><li>home page</li></a>
+        <a href="page6.html"><li>about page</li></a>
+        <a href="kinds of books/horro.HTML"><li>horro page</li></a>
+        <a href="kinds of books/romance.html"><li>romance page</li></a>
+        <a href="kinds of books/historical.html"><li>history page</li></a>
+        <a href="kinds of books/science.html"><li>science page</li></a>
+        <a href="signIn.html"><li>log out</li></a>
+      </ul>
+    </div>
+
+
+     <div class="data"> 
+        
+        <div style="border-bottom-style:dotted; padding: 10px;">
+            <form action="kinds of books/horro.HTML">
+                <div class="section">
+                       <h1>1-horror page:</h1><br>
+                         <h3> change the background color for horror page</h3>
+                         <br>
+                           please write the color name :
+                           <input type="text" id="colorname" />
+                            <button id="colorsubmit" onclick="changecolor()"> submitcolor</button><hr>
+                          <h3>add text in the top of the page </h3><br>
+                           please write the text :
+                           <input type="text" id="txt" />
+                            <input type="submit" value="click" onclick="passvalues();" /><hr>
+                </div>
+            </form>
+        </div>  
+
+ 
+
+        <div style="border-bottom-style:dotted; padding: 10px;">
+            <form action="kinds of books/romance.html">
+                <div class="section">
+                       <h1>2-romance page:</h1><br>
+                         <h3> change the background color for romance page</h3>
+                         <br>
+                           please write the color name :
+                           <input type="text" id="colorname2" />
+                            <button id="colorsubmit" onclick="changecolor2()"> submitcolor</button><hr>
+                          <h3>add text in the top of the page </h3><br>
+                           please write the text :
+                           <input type="text" id="txt2" />
+                            <input type="submit" value="click" onclick="passvalues2();" /><hr>
+                </div>
+            </form>
+        </div> 
+
+
+
+     <div style="border-bottom-style:dotted; padding: 10px;">
+        <form action="kinds of books/historical.html">
+            <div class="section">
+                <h1>3-history page:</h1><br>
+           <h3> change the background color for history page</h3> <br>
+            please write the color name :
+        <input type="text" id="colorname3" />
+        <button id="colorsubmit" onclick="changecolor3()"> submitcolor</button> <hr>
+        <h3>add text in top of the page </h3><br>
+         please write the text :
+         <input type="text" id="txt3" />
+                <input type="submit" value="click" onclick="passvalues3();" /><hr>
+            </div>
+        </form>
+         </div>
+
+
+         <div style="border-bottom-style:dotted; padding: 10px;">
+            <form action="kinds of books/science.html">
+                <div class="section">
+                    <h1>4-science page:</h1><br>
+               <h3> change the background color for science page</h3> <br>
+                 please write the color name :
+            <input type="text" id="colorname4" />
+            <button id="colorsubmit" onclick="changecolor4()"> submitcolor</button><hr>
+            <h3>add text in the top of the page </h3><br>
+             please write the text :
+             <input type="text" id="txt4" />
+                    <input type="submit" value="click" onclick="passvalues4();" /><hr>
+                </div>
+            </form>
+             </div>
+
+
+             <div style="border-bottom-style:dotted; padding: 10px;">
+                <form action="page7.html">
+                    <div class="section">
+                        <h1>5-home page:</h1><br>
+                   <h3> change the background color for home page</h3> <br>
+                     please write the color name :
+                <input type="text" id="colorname5" />
+                <button id="colorsubmit" onclick="changecolor5()"> submitcolor</button><hr>
+                <h3>add text in the top of the page </h3><br>
+                 please write the text :
+                 <input type="text" id="txt5" />
+                        <input type="submit" value="click" onclick="passvalues5();" /><hr>
+                    </div>
+                </form>
+                 </div>
+
+
+                 <div style="border-bottom-style:dotted; padding: 10px;">
+                    <form action="page6.html">
+                        <div class="section">
+                            <h1>6-about page:</h1><br>
+                       <h3> change  the background color for about page</h3> <br>
+                            please write the color name :
+                    <input type="text" id="colorname6" />
+                    <button id="colorsubmit" onclick="changecolor6()"> submitcolor</button><hr>
+                    <h3>add text in the top of the page </h3><br>
+                     please write the text :
+                     <input type="text" id="txt6" />
+                            <input type="submit" value="click" onclick="passvalues6();" /><hr>
+                        </div>
+                    </form>
+                </div>
+                      
+</div>
+  </body>
+  </html>

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Local Storage</title>
+    <style>
+ *{
+     box-sizing: border-box;
+ }
+ body{
+     font-family: sans-serif;
+ }
+ 
+.parant{
+    width: 1200px;
+    margin: 50px auto;
+    padding: 20px;
+  
+    background-color:  #3aa2e7;
+}
+
+.parant input{
+    border: none;
+    padding: 15px;
+    width: 100%;
+    background-color:#a7c9df ;
+    margin-bottom: 15px;
+    font-size: 20px;
+    border-radius: 25px;
+}
+.parant input:focus{
+    
+    outline: none;
+}
+.parant .buttons{
+ display: flex;
+ justify-content: space-between;
+ padding: 10px 20px;
+
+}
+.parant .buttons span{
+    background-color:#a7c9df ;
+    text-align: center;
+    padding: 6px 10px;
+padding-top: 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.parant .results{
+    background-color:#a7c9df ;
+    padding: 20px;
+    margin-top: 15px;
+    text-align: center;
+    border-radius: 25px;
+
+}
+    </style>
+    <script>
+        
+  let allSpans=document.querySelectorAll(".buttons span");
+let results=document.querySelector(".results > span");
+let theInput=document.getElementById("the-input");
+
+allSpans.forEach(span =>{
+    span.addEventListener("click", (e) => {
+        if(e.target.classList.contains("check-items")){
+            checkItem();
+        }
+    })
+});
+
+function checkItem(){
+    console.log("Check");
+}
+
+  </script>
+</head>
+<body>
+    <div class="parant">
+  <input id="the-input" type="text" placeholder="Local Storage Item">
+<div class="buttons">
+<span class="check-items">check items</span>
+<span class="add-items">add items</span>
+<span class="delete-items">delete items</span>
+<span class="show-items">show items</span>
+<span class="check-items">check items</span>
+<br><br><br>
+<span class="delete-items">delete items</span>
+<span class="delete-items">delete items</span>
+<span class="delete-items">delete items</span>
+<span class="check-items">check items</span>
+<span class="add-items">add items</span>
+</div>
+<div class="results">
+<span>Results Here</span>
+</div>
+    </div>
+</body>
+</html>

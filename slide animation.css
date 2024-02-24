@@ -1,0 +1,45 @@
+body
+{
+background-color: rgb(255, 255, 255);
+}
+.slider
+{
+    min-width:1000px;
+    margin: auto;
+    overflow: hidden;
+    background-color: rgb(58, 122, 206);
+}
+.slider ul
+{
+    padding: 0;
+    list-style: none;
+    width:4000px;
+    position: relative;
+    animation:sliding 15s ease-in-out infinite ;
+}
+.slider ul:hover
+{
+    animation-play-state: paused;
+
+}
+img
+{
+margin: 10px;
+}
+.slider ul li
+{
+float: left;
+}
+@keyframes sliding
+{
+    0%{left: 0;}
+    15%{left:-340px;}
+    30%{left:-680px;}
+    45%{left:-1020px;}
+    60%{left:-1720px;}
+    75%{left:-2090px;}
+    
+   
+
+    
+}
